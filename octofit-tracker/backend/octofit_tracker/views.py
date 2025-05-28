@@ -5,20 +5,20 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Lea
 
 class UserView(APIView):
     def get(self, request):
-        return Response({"message": "User endpoint"})
+        return Response({"message": "User endpoint", "url": "https://potential-succotash-5jxwpj97rqhp5w.github.dev-8000.app.github.dev"})
 
 class TeamView(APIView):
     def get(self, request):
-        return Response({"message": "Team endpoint"})
+        return Response({"message": "Team endpoint", "url": "https://potential-succotash-5jxwpj97rqhp5w.github.dev-8000.app.github.dev"})
 
 class ActivityView(APIView):
     def get(self, request):
-        return Response({"message": "Activity endpoint"})
+        return Response({"message": "Activity endpoint", "url": "https://potential-succotash-5jxwpj97rqhp5w.github.dev-8000.app.github.dev"})
 
 class LeaderboardView(APIView):
     def get(self, request):
-        return Response({"message": "Leaderboard endpoint"})
+        return Response({"message": "Leaderboard endpoint", "url": "https://potential-succotash-5jxwpj97rqhp5w.github.dev-8000.app.github.dev"})
 
 class WorkoutView(APIView):
     def get(self, request):
-        return Response({"message": "Workout endpoint"})
+        return Response({"message": "Workout endpoint", "url": "https://potential-succotash-5jxwpj97rqhp5w.github.dev-8000.app.github.dev"})
