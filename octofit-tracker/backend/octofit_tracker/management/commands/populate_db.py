@@ -8,6 +8,7 @@ class Command(BaseCommand):
         client = MongoClient('localhost', 27017)
         db = client['octofit_db']
 
+
         # Clear existing data
         db.users.delete_many({})
         db.teams.delete_many({})
