@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 from pymongo import MongoClient
 
 class Command(BaseCommand):
-    help = 'Populate the octofit_db database with test data'
+    help = 'Populate the octofit_db database with test data for users, teams, activity, leaderboard, and workouts'
 
     def handle(self, *args, **kwargs):
         client = MongoClient('localhost', 27017)
