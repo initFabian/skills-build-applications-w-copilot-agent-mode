@@ -8,6 +8,13 @@ class Command(BaseCommand):
         client = MongoClient('localhost', 27017)
         db = client['octofit_db']
 
+        # Clear existing data
+        db.users.delete_many({})
+        db.teams.delete_many({})
+        db.activity.delete_many({})
+        db.leaderboard.delete_many({})
+        db.workouts.delete_many({})
+
         # Populate users collection
         db.users.insert_many([
             {"email": "user1@example.com", "name": "User One", "age": 25},
